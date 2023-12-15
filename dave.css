@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-image: url(./image/BG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    max-width: 700px;
+    width: 500px;
+    height: 500px;
+    background: transparent;
+    padding: 25px 30px;
+    border-radius: 5px;
+    border: 1px solid cornflowerblue;
+    color: lightblue;
+    box-shadow: 20px 30px 30px black;
+}
+.title{
+    font-size: 25px;
+    font-weight: bold;
+    border-bottom: 3px solid cyan;
+    width: 25px;
+    color:cyan;
+}
+.con1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+.input-box{
+    margin-bottom: 15px;
+}
+.details{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+input[type="text"]{
+    height: 30px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    font-size: 16px;
+    background: transparent;
+    color: white;
+}
+input:hover{
+    border-bottom: 2px solid lightblue;
+}
+.gender-title{
+    font-size: 20px;
+    font-weight: bold;
+    color:deepskyblue;
+}
+.category{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px;
+}
+
+input[type=submit]{
+    background: blue;
+    width: 100%;
+    padding: 5px;
+    color: white;
+    outline: none;
+}
+
+@media (max-width: 584px){
+    body{
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
+    .container{
+        max-width: 100%;
+        height: 100%;
+    }
+    .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+        height: 100%;
+    }
+    .category{
+        width: 100%;
+    }   
+}
